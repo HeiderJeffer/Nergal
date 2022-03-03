@@ -6,7 +6,7 @@ MAX_SPEED = 6.28
 
 # create the Robot instance.
 robot = Robot()
-
+ 
 # get a handler to the motors and set target position to infinity (speed control)
 leftMotor = robot.getDevice('left wheel motor')
 rightMotor = robot.getDevice('right wheel motor')
