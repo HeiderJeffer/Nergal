@@ -1,0 +1,45 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.24302729836839704 -0.9303333422082316 -0.2746226586125394 1.7859981010130228
+  position -1.5786801528927292 1.467594708443721 0.030313234895210248
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+}
+E-puck {
+  hidden position_0_0 10412.048541005282
+  hidden position_0_1 11619.479997355671
+  hidden linearVelocity_0 2.3404534581795516e-08 -2.591321788258938e-09 -1.4983280702078143e-08
+  hidden angularVelocity_0 -4.455429675451897e-07 -4.599047311777463e-07 2.5763777992247787e-07
+  hidden rotation_1 1 0 0 5.4726982984719195
+  hidden linearVelocity_1 2.4200805044636066e-08 9.148398483454353e-10 -6.8652894269396085e-09
+  hidden angularVelocity_1 0.6046388699947737 0.0006078279502946972 -0.16968971085682877
+  hidden rotation_2 0.9999999999999999 0 0 4.412820926563979
+  hidden linearVelocity_2 2.0052336144967893e-08 -5.6668950865084535e-09 -2.756722422767593e-08
+  hidden angularVelocity_2 0.6046388555901907 0.000607813264699247 -0.16968976074118408
+  translation 0.9631817436451067 -3.493393490723237e-05 0.9632365994797566
+  rotation -0.0008195694494372398 0.9999968586273739 -0.0023687636651695903 -2.8679876323598883
+  controller "my_controller_line_follower"
+  groundSensorsSlot [
+    DistanceSensor {
+      translation 0 -0.01 0
+      name "ir0"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 0.02 0
+      name "ir1"
+      type "infra-red"
+    }
+  ]
+}
+TrackOne {
+  translation 0 -0.0075 0
+}
